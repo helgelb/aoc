@@ -15,8 +15,6 @@ def main():
         day_dir = f"{day}"
         if not os.path.isdir(day_dir):
             continue
-
-        print(f"Day {day}")
         subprocess.run(["python3", f"{day}/task.py"])
 
 
