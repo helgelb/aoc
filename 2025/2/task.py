@@ -115,14 +115,14 @@ def run_tests():
 
 
 def run_task1():
-    filepath = os.path.join(os.path.dirname(__file__), "input-1.txt")
+    filepath = os.path.join(os.path.dirname(__file__), "input.txt")
     input_data = read_file(filepath, split_char=",")
     result = task1(input_data)
     print("Part 1: " + str(result))
 
 
 def run_task2():
-    filepath = os.path.join(os.path.dirname(__file__), "input-2.txt")
+    filepath = os.path.join(os.path.dirname(__file__), "input.txt")
     input_data = read_file(filepath, split_char=",")
     result = task2(input_data)
     print("Part 2: " + str(result))

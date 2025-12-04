@@ -11,7 +11,6 @@ class Day4(Task):
         super().__init__(day)
 
     def run_tests(self):
-        """Override with your test cases"""
         test_data = [
             "..@@.@@@@.",
             "@@@.@.@.@@",

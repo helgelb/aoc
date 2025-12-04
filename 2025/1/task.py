@@ -80,5 +80,5 @@ class Task:
 if __name__ == "__main__":
     task1 = Task()
     task2 = Task()
-    print("Part 1: " + str(task1.run("input-1.txt")))
-    print("Part 2: " + str(task2.run("input-2.txt", count_crossing=True)))
+    print("Part 1: " + str(task1.run("input.txt")))
+    print("Part 2: " + str(task2.run("input.txt", count_crossing=True)))

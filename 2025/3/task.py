@@ -92,7 +92,7 @@ def test1(test_data=test_data):
 
 
 def task1():
-    input_file = Path(__file__).parent / "input-1.txt"
+    input_file = Path(__file__).parent / "input.txt"
     data = read_file(str(input_file), strip=True, split_char="\n")
     combinations = find_largest_two_digit_combination(data, debug=False)
     total = sum_combinations(combinations)
@@ -119,7 +119,7 @@ def test2(test_data=test_data):
 
 
 def task2():
-    input_file = Path(__file__).parent / "input-2.txt"
+    input_file = Path(__file__).parent / "input.txt"
     data = read_file(str(input_file), strip=True, split_char="\n")
     result = find_largest_n_digit_combination(data, n=12, debug=False)
     sum = sum_combinations(result)
