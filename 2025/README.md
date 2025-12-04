@@ -2,39 +2,36 @@
 
 ## Setup
 
-Install dependencies:
-
 ```bash
 uv sync
 ```
 
+## Create a new day
+
+```bash
+./create_day.sh <day_number>
+```
+
+This creates a new day directory with `task.py`, `input-1.txt`, and `input-2.txt`.
+
 ## Run
 
-Run all solutions:
+Run a specific day:
 
 ```bash
-python3 main.py
+cd <day> && python3 task.py
 ```
 
-
-Run a specific day's solution:
+Or use main:
 
 ```bash
-python3 main.py 1
-# Or
-python3 1/task.py
+python3 main.py           # Run all days
+python3 main.py <day>     # Run a specific day
 ```
 
-## Formatting & Linting
-
-Format code:
+## Format & Lint
 
 ```bash
 uv run ruff format .
-```
-
-Check and fix issues:
-
-```bash
 uv run ruff check --fix .
 ```
