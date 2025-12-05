@@ -26,21 +26,21 @@ class Task:
 
     def part1(self, data: list[str]) -> int:
         """Override this for part 1 logic"""
-        return 0
+        raise NotImplementedError("Subclass must implement part1()")
 
     def part2(self, data: list[str]) -> int:
         """Override this for part 2 logic"""
-        return 0
+        raise NotImplementedError("Subclass must implement part2()")
 
     def run(self):
         """Run both parts"""
-        print(f"=== Day {self.day} ===")
+        print(f"Day {self.day}")
 
         try:
             self.run_tests()
-            print("✓ All tests passed\n")
+            print("All tests passed\n")
         except Exception as e:
-            print(f"✗ Tests failed: {e}\n")
+            print(f"Tests failed: {e}\n")
             return
 
         data = self.read_input()
